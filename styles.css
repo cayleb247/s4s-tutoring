@@ -46,6 +46,8 @@
     isolation: isolate;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 body {
   display: flex;
@@ -62,9 +64,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   
 
 }
@@ -99,7 +103,7 @@ nav ul{
 }
 
 .header-link:hover {
-  background-color: rgb(0 0 0 / 0.1);
+  text-decoration: underline;
 }
 
 header a {
@@ -115,12 +119,72 @@ header a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
+}
+
+.hero-page h1 {
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hero-page h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.find-tutors-btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  margin-top: 30px;
+  transition: background-color 0.5s ease;
+}
+
+.find-tutors-btn:hover {
+  background-color: rgb(226, 226, 226);
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100vw;
   height: 200px;
-  background-color: grey;
+  background-color: white;
   bottom: 0;
+  border-top: 1px solid rgb(0 0 0 / 0.1);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-links {  
+  display: flex;
+}
+
+.footer-links ul {
+  padding:0;
+  display: flex;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links a:visited {
+  color: black;
 }
