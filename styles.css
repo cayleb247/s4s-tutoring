@@ -167,7 +167,7 @@ header a:visited {
     flex: 0 0 100%;
   }
 
-  &:hover .group {
+  &:hover .tutor-group {
     animation-play-state: paused;
   }
 }
