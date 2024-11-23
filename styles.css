@@ -52,7 +52,10 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
 }
 
 
@@ -84,13 +87,10 @@ nav ul{
 }
 
 .signup-btn {
-  background-color: blue;
+  background-color:#2e5eaa;
   color: white;
   border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: .5em 1em .5em 1em;
   margin-left: 20px;
 }
 
@@ -119,11 +119,12 @@ header a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding: 6em;
+  padding-bottom: 28em;
 }
 
 .hero-page h1 {
-  font-size: 50px;
+  font-size: 3rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -142,7 +143,8 @@ header a:visited {
   background-color: white;
   border: 1px solid grey;
   border-radius: 5px;
-  padding: 10px 30px 10px 30px;
+  font-size: 1rem;
+  padding: 1em 2em 1em 2em;
   margin-top: 30px;
   transition: background-color 0.5s ease;
 }
@@ -151,12 +153,71 @@ header a:visited {
   background-color: rgb(226, 226, 226);
 }
 
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  width: 100vw;
+  background-color: rgb(226, 226, 226);
+  height: 400px;
+
+}
+
+.services h2 {
+  font-size: 1.75rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.services h3 {
+  font-size: 1rem;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  max-width: 75ch;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container.multi-icon{
+  display: flex;
+  flex-direction: column;
+}
+
+span.size-large {
+  font-size: 82px;
+  font-variation-settings: 'OPSZ' 82;
+}
+
+span.size-small {
+  font-size: 58px;
+  font-variation-settings: 'OPSZ' 58;
+}
+
+span.indented {
+  margin-right: 10px
+}
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
   width: 100vw;
   height: 200px;
   background-color: white;
