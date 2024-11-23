@@ -284,7 +284,7 @@ header a:visited {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 80%;
+  width: 60%;
 
 }
 
@@ -292,13 +292,13 @@ header a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 8em
+  width: 8em;
 }
 
 .icon-container.multi-icon{
   display: flex;
   flex-direction: column;
-  width: 8em
+  width: 8em;
 }
 
 span.size-large, span.size-small {
