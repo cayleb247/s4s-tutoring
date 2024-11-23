@@ -84,6 +84,10 @@ nav ul{
   list-style: none;
 }
 
+a:link, a:visited, a:hover, a:active {
+  color: black
+}
+
 .signup-btn {
   background-color:#2e5eaa;
   color: white;
