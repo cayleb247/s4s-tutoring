@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=function,group,groups,history_edu,laptop_mac" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3>S4S Tutoring</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html"><div class="header-link">Home</div></a></li>
+                <li><a href="tutoring.html"><div class="header-link">Tutoring</div></a></li>
+                <li><a href="volunteer.html"><div class="header-link">Volunteer</div></a></li>
+                
+                <li><a href="donate.html"><div class="header-link">Sign in</div></a></li>
+            </ul>
+            <a href="signup.html"><div class="signup-btn">Sign Up</div></a>
+            
+        
+        
+        </nav>
+        
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="about.html"><div class="header-link">About</div></a></li>
+                <li><a href="donate.html"><div class="header-link">Support us</div></a></li>
+                <li><a href="about.html"><div class="header-link">Contact</div></a></li>
+            </ul>
+        </div>
+        
+        <h4>S4S Tutoring</h4>
+
+
+    </footer>
+</body>
+</html>
